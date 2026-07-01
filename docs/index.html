@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <title>2X — AOCD</title>
+
+  <!-- SEO / SOCIAL -->
+  <meta name="description" content="AOCD — the new album from 2X. Presave now." />
+  <meta property="og:title" content="2X — AOCD" />
+  <meta property="og:description" content="Presave AOCD now." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="2X — AOCD" />
+  <meta name="twitter:description" content="Presave AOCD now." />
+  <meta name="twitter:image" content="images/og-image.jpg" />
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon-256.png" />
+
+  <!-- Preload hero background so first paint isn't waiting on CSS parse -->
+  <link rel="preload" as="image" href="images/backgroundcoverhome.jpg" />
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- =====================================================
+       TOP MARQUEE — status strip
+  ====================================================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>AOCD &nbsp; // &nbsp; 2X &nbsp; // &nbsp; PRESAVE NOW &nbsp; // &nbsp; AOCD &nbsp; // &nbsp; 2X &nbsp; // &nbsp; OUT SOON &nbsp; // &nbsp;</span>
+      <span>AOCD &nbsp; // &nbsp; 2X &nbsp; // &nbsp; PRESAVE NOW &nbsp; // &nbsp; AOCD &nbsp; // &nbsp; 2X &nbsp; // &nbsp; OUT SOON &nbsp; // &nbsp;</span>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+  <header class="hero">
+    <div class="hero__bg" role="img" aria-label="AOCD album cover"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__inner">
+      <div class="hero__tag">
+        <span class="dot"></span>
+        <span>2X / AOCD / NEW ALBUM</span>
+      </div>
+
+      <img
+        src="images/AOCD.png"
+        alt="AOCD"
+        class="hero__title"
+        width="1407"
+        height="880"
+        fetchpriority="high"
+        draggable="false"
+      />
+
+      <!-- REPLACE href="#" with the PRESAVE link (feature.fm / hyperfollow / etc.) -->
+      <a
+        href="#"
+        id="presave-link"
+        class="cta-presave"
+        target="_blank"
+        rel="noopener"
+      >
+        PRESAVE NOW
+        <span class="cta-presave__arrow">→</span>
+      </a>
+
+      <!-- DISCORD link -->
+      <a
+        href="https://discord.gg/HXm88eEdD"
+        id="discord-link"
+        class="discord-box"
+        target="_blank"
+        rel="noopener"
+      >
+        <span class="discord-box__label">[ DISCORD ]</span>
+        <span class="discord-box__sub">join the server</span>
+      </a>
+
+      <!-- HIDDEN GAME LINK — see js/main.js for konami-code trigger too -->
+      <a
+        href="https://clawboi.github.io/2xgames/crabcage#crabcage"
+        id="hidden-game"
+        class="hidden-game"
+        target="_blank"
+        rel="noopener"
+        aria-label="hidden link"
+        title=""
+      >
+        ▮
+      </a>
+    </div>
+  </header>
+
+  <!-- =====================================================
+       TRACKLIST
+  ====================================================== -->
+  <section class="tracklist" id="tracklist">
+    <div class="section-head">
+      <span class="section-head__num">/01</span>
+      <h2 class="section-head__title">TRACKLIST</h2>
+      <span class="section-head__rule"></span>
+    </div>
+
+    <ol class="tracks">
+      <li class="track">
+        <span class="track__num">01</span>
+        <span class="track__title">B4Dawn¡</span>
+        <span class="track__time"></span>
+        <p class="track__note"></p>
+      </li>
+
+      <li class="track">
+        <span class="track__num">02</span>
+        <span class="track__title">Jeff Hardy¡</span>
+        <span class="track__time"></span>
+        <p class="track__note"></p>
+      </li>
+
+      <li class="track">
+        <span class="track__num">03</span>
+        <span class="track__title">Crabcage</span>
+        <span class="track__time"></span>
+        <p class="track__note"></p>
+      </li>
+
+      <li class="track">
+        <span class="track__num">04</span>
+        <span class="track__title">double dutch¡</span>
+        <span class="track__time"></span>
+        <p class="track__note"></p>
+      </li>
+
+      <li class="track">
+        <span class="track__num">05</span>
+        <span class="track__title">Silverspoon¡</span>
+        <span class="track__time"></span>
+        <p class="track__note"></p>
+      </li>
+
+      <li class="track">
+        <span class="track__num">06</span>
+        <span class="track__title">X.O.X.O¡</span>
+        <span class="track__time"></span>
+        <p class="track__note"></p>
+      </li>
+
+      <li class="track">
+        <span class="track__num">07</span>
+        <span class="track__title">3 5¡</span>
+        <span class="track__time"></span>
+        <p class="track__note"></p>
+      </li>
+
+      <li class="track">
+        <span class="track__num">08</span>
+        <span class="track__title">Handsup¡</span>
+        <span class="track__time"></span>
+        <p class="track__note"></p>
+      </li>
+
+      <li class="track">
+        <span class="track__num">09</span>
+        <span class="track__title">LivinLarge¡</span>
+        <span class="track__time"></span>
+        <p class="track__note"></p>
+      </li>
+
+      <li class="track">
+        <span class="track__num">10</span>
+        <span class="track__title">Geekedup¡</span>
+        <span class="track__time"></span>
+        <p class="track__note"></p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- =====================================================
+       LISTEN / FOLLOW
+  ====================================================== -->
+  <section class="follow" id="follow">
+    <div class="section-head">
+      <span class="section-head__num">/02</span>
+      <h2 class="section-head__title">LISTEN / FOLLOW</h2>
+      <span class="section-head__rule"></span>
+    </div>
+
+    <div class="follow__grid">
+      <!-- REPLACE: spotify URL -->
+      <a href="#" class="follow__tile" target="_blank" rel="noopener" data-platform="spotify">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        <span>SPOTIFY</span>
+      </a>
+
+      <!-- REPLACE: apple music URL -->
+      <a href="#" class="follow__tile" target="_blank" rel="noopener" data-platform="apple">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.997 6.124c0-.738-.065-1.47-.24-2.19-.317-1.31-1.062-2.31-2.18-3.043C21.003.517 20.373.285 19.703.164c-.517-.093-1.038-.135-1.564-.15-.04-.003-.083-.01-.124-.013H5.988c-.152.01-.303.017-.455.026-.728.043-1.453.124-2.140.4-1.402.564-2.42 1.539-2.967 2.953-.183.475-.291.974-.366 1.476-.058.4-.084.806-.084 1.212C0 6.107.001 6.13 0 6.123v11.755c.001-.007.001.018.001.022 0 .406.026.812.084 1.212.075.502.183 1 .366 1.476.547 1.414 1.565 2.389 2.967 2.953.687.276 1.412.357 2.140.4.152.009.303.016.455.026.04 0 11.063.003 11.063.003.027 0 .054-.006.081-.006.547-.011 1.094-.046 1.638-.144.681-.124 1.32-.358 1.91-.738 1.063-.685 1.78-1.648 2.106-2.892.182-.694.282-1.4.291-2.114.013-1.063.022-2.13.022-3.197V6.124zM9.85 17.51c-1.09 0-1.99-.9-1.99-1.99V8.48c0-1.09.9-1.99 1.99-1.99s1.99.9 1.99 1.99v7.04c0 1.09-.9 1.99-1.99 1.99z"/></svg>
+        <span>APPLE MUSIC</span>
+      </a>
+
+      <!-- REPLACE: soundcloud URL -->
+      <a href="#" class="follow__tile" target="_blank" rel="noopener" data-platform="soundcloud">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17.939h-1V9.75c.495-.012 1 .354 1 .937v7.252zm-3 0h1V11.16c0-.572-.45-.951-1-.951v7.731zm-2 0h1v-5.286c-.45 0-1 .241-1 .857v4.429zm-2-1.875c0 .607.55.857 1 .857v-2.572c-.45 0-1 .203-1 .857v.858zm9.563 1.875H8.469V9.078c0-.484.355-.78.78-.78.495 0 .9.41.9.984v8.657zm2 0h1V8.469c0-.572-.45-.951-1-.951v10.421zm2 0h1V8.469c0-.572-.45-.951-1-.951v10.421zm2 0h1V6.094c0-.572-.45-.951-1-.951v12.796zm2 0h1V5.625c0-.572-.45-.951-1-.951v13.265zm3.563-3.234c0 1.875-1.5 3.234-3.375 3.234h-2.188V7.5c.469-.234 1.219-.328 1.781-.328 2.625 0 4.688 2.063 4.688 4.688 0 .937-.281 1.781-.75 2.484.469.234.844.797.844 1.359z"/></svg>
+        <span>SOUNDCLOUD</span>
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@2xsjay" class="follow__tile" target="_blank" rel="noopener" data-platform="tiktok">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.86 20.1a6.34 6.34 0 0 0 10.86-4.43V8.49a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.9-.32z"/></svg>
+        <span>TIKTOK</span>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/2xsjay" class="follow__tile" target="_blank" rel="noopener" data-platform="instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        <span>INSTAGRAM</span>
+      </a>
+
+      <!-- X / Twitter -->
+      <a href="https://x.com/imsickoffeins" class="follow__tile" target="_blank" rel="noopener" data-platform="x">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <span>X / TWITTER</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       SHOP
+  ====================================================== -->
+  <section class="shop" id="shop">
+    <div class="section-head">
+      <span class="section-head__num">/03</span>
+      <h2 class="section-head__title">SHOP</h2>
+      <span class="section-head__rule"></span>
+    </div>
+
+    <p class="shop__note">Limited merch — fulfilled via Redbubble. More drops coming soon.</p>
+
+    <div class="shop__grid">
+      <!-- Photographic print -->
+      <a href="https://www.redbubble.com/i/photographic-print/AOCD-Cover-Art-by-clawboi/181912470/zltf?asc=u" class="shop__item" target="_blank" rel="noopener">
+        <div class="shop__art" data-placeholder="PHOTO PRINT"></div>
+        <div class="shop__meta">
+          <span class="shop__name">AOCD COVER — PHOTO PRINT</span>
+          <span class="shop__cta">VIEW →</span>
+        </div>
+      </a>
+
+      <!-- Throw pillow -->
+      <a href="https://www.redbubble.com/i/throw-pillow/AOCD-Cover-Art-by-clawboi/181912470/xwxm?asc=u" class="shop__item" target="_blank" rel="noopener">
+        <div class="shop__art" data-placeholder="PILLOW"></div>
+        <div class="shop__meta">
+          <span class="shop__name">AOCD COVER — THROW PILLOW</span>
+          <span class="shop__cta">VIEW →</span>
+        </div>
+      </a>
+
+      <!-- Canvas print -->
+      <a href="https://www.redbubble.com/i/canvas-print/AOCD-Cover-Art-by-clawboi/181912470/5mul?asc=u" class="shop__item" target="_blank" rel="noopener">
+        <div class="shop__art" data-placeholder="CANVAS"></div>
+        <div class="shop__meta">
+          <span class="shop__name">AOCD COVER — CANVAS PRINT</span>
+          <span class="shop__cta">VIEW →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       INQUIRIES — Supabase backed
+  ====================================================== -->
+  <section class="inquiry" id="contact">
+    <div class="section-head">
+      <span class="section-head__num">/04</span>
+      <h2 class="section-head__title">INQUIRIES</h2>
+      <span class="section-head__rule"></span>
+    </div>
+
+    <p class="inquiry__note">
+      Send a message. Goes straight to 2X.
+    </p>
+
+    <div class="inquiry__form" id="inquiry-form">
+      <label class="inquiry__field">
+        <span class="inquiry__label">&gt; name</span>
+        <input type="text" id="f-name" required autocomplete="name" />
+      </label>
+
+      <label class="inquiry__field">
+        <span class="inquiry__label">&gt; email</span>
+        <input type="email" id="f-email" required autocomplete="email" />
+      </label>
+
+      <label class="inquiry__field">
+        <span class="inquiry__label">&gt; message</span>
+        <textarea id="f-message" rows="5" required></textarea>
+      </label>
+
+      <button type="button" id="f-send" class="inquiry__send">
+        SEND →
+      </button>
+
+      <div class="inquiry__status" id="f-status" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="foot">
+    <span>© 2X — AOCD</span>
+    <span class="foot__dot">•</span>
+    <a href="#tracklist">tracklist</a>
+    <a href="#follow">follow</a>
+    <a href="#shop">shop</a>
+    <a href="#contact">contact</a>
+  </footer>
+
+  <script src="js/form.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
